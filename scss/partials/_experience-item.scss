@@ -1,0 +1,105 @@
+$date-width: 30%;
+$icon-width: 50px;
+$description-width: calc(100% - #{$date-width} - #{$icon-width});
+
+$icon-size: 28px;
+$item-margin: 4em;
+
+.experience-item {
+	display: table;
+	margin-top: $item-margin;
+
+	&:first-child {
+		margin-top: 2em;
+	}
+
+	& > * {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	span.item-date {
+		width: $date-width;
+		margin-top: 10px;
+		font-size: 16px;
+		text-align: right;
+		padding-right: 15px;
+		font-weight: 300;
+		color: $darkgray;
+	}
+
+	.item-timeline-wrap {
+		height: 100%;
+		text-align: center;
+		position: relative;
+
+		.item-icon-wrap {
+			font-size: $icon-size;
+			border-radius: 100%;
+			background-color: $blue;
+			width: $icon-width;
+			height: $icon-width;
+			text-align: center;
+			color: #fff;
+
+			i {
+				margin-top: 10px;
+				margin-left: -2px;
+				z-index: 2;
+			}
+		}
+
+		.item-timeline-line {
+			width: 4px;
+			position: absolute;
+			top: 0;
+			bottom: -$item-margin;
+			left: calc(#{$icon-width}/2 - 2px);
+			background-color: $blue;
+			z-index: 1;
+		}
+	}
+
+	&:last-child .item-timeline-line {
+	  background: linear-gradient(0, rgba(72, 125, 255, 0.07), $blue);
+	}
+
+	.item-description {
+		padding-left: 25px;
+		width: $description-width;
+
+		.item-content {
+			background-color: #fff;
+			padding: 25px 15px;
+			box-shadow: $shadow;
+
+			h3.employer-name {
+				margin-top: 0;
+			}
+
+			h4.position {
+				font-size: 16px;
+			}
+
+			p.item-text {
+				padding-top: 10px;
+				font-size: 14px;
+				color: $darkgray;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	@include media-md {
+		$date-width: 15%;
+		$description-width: calc(100% - #{$date-width} - #{$icon-width});
+
+		span.item-date {
+			width: $date-width;
+		}
+
+		.item-description {
+			width: $description-width;
+		}
+	}
+}

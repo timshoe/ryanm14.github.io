@@ -1,0 +1,47 @@
+section#about {
+	padding-top: 3em;
+	padding-bottom: 5em;
+	background-color: #fff;
+	border-bottom: 1px solid $gray-border;
+
+	.about-wrap {
+		width: 90%;
+		margin: 0 auto;
+		display: table;
+
+		.about-header-wrap {
+			width: 40%;
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+
+			@include media-md {
+				width: 100%;
+			}
+		}
+
+		.about-text {
+			width: 60%;
+			display: inline-block;
+			vertical-align: top;
+
+			color: $darkgray;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 400;
+
+			@include media-md {
+				& {
+					width: 90%;
+					margin-left: 5%;
+				}
+			}
+		}
+	}
+
+	@include media-md {
+		.social-resume {
+			text-align: center;
+		}
+	}
+}

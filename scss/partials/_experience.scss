@@ -1,0 +1,19 @@
+section#experience {
+	padding-top: 3em;
+	padding-bottom: 5em;
+	
+	.experience-wrap {
+		margin: 0 auto;
+		text-align: center;
+
+		.experience-items-wrap {
+			text-align: left;
+			width: 70%;
+			margin: 0 auto;
+
+			@include media-md {
+				width: 90%;
+			}
+		}
+	}
+}
