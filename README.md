@@ -1,5 +1,5 @@
-# rstumbaugh.github.io
+# ryanm14.github.io
 
 Personal website.
 
-https://rstumbaugh.github.io
+https://ryanm14.github.io
