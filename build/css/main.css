@@ -274,14 +274,18 @@ section#projects {
     .project-item .project-item-right {
       width: 100%; } }
 
-#image-terpsearch {
-  background-image: url("../../img/terpsearch.png"); }
+#image-traffic {
+  background-image: url("../../img/trafficpredictor.png"); }
 
-#image-umdio {
-  background-image: url("../../img/umdio.png"); }
+#image-secure {
+  background-image: url("../../img/secure.png"); }
 
-#image-solarsim {
-  background-image: url("../../img/solarsim.png");
+#image-dev {
+  background-image: url("../../img/dev.png");
+  background-position: center center; }
+
+#image-graphic {
+  background-image: url("../../img/graphic.png");
   background-position: center center; }
 
 section#social {
