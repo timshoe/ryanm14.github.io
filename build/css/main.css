@@ -348,4 +348,13 @@ span.tag {
     margin-right: 2%;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+li{
+    font-size: 18px;
+    margin-left: 10px,10px,10px,10px;
+}
+
 /*# sourceMappingURL=main.css.map */
