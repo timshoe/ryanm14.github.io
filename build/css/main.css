@@ -283,6 +283,8 @@ section#projects {
 #image-dev {
   background-image: url("../../img/dev.png");
   background-position: center center; }
+#image-echo {
+  background-image: url("../../img/echo.jpg"); }
 
 #image-graphic {
   background-image: url("../../img/graphic.png");
